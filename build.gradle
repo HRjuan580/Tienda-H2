@@ -19,3 +19,14 @@ test {
 kotlin {
     jvmToolchain(21)
 }
+dependencies {
+    implementation("com.h2database:h2:2.2.224")
+}
+plugins {
+    kotlin("jvm") version "1.9.10" // o la última que tengas
+    application
+}
+
+application {
+    mainClass.set("MainKt")
+}
